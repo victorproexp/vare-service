@@ -1,0 +1,29 @@
+2022-10-31 21:17:52.3075|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-10-31 21:17:53.0273|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7069 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-31 21:17:53.0430|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5131 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-31 21:17:53.0575|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-31 21:17:53.0594|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-31 21:17:53.0610|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/victorpascale/Projects/4semester/vare-service/vareAPI/ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-31 21:19:05.8874|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController |url: https://localhost/api/vare|action: Post|vareAPI.Controllers.vareController..ctor
+2022-10-31 21:20:11.2486|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController |url: https://localhost/api/vare|action: Post|vareAPI.Controllers.vareController..ctor
+2022-10-31 21:21:19.9081|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+2022-10-31 21:21:31.5602|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-10-31 21:21:32.2100|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7069 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-31 21:21:32.2239|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5131 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-31 21:21:32.2251|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-31 21:21:32.2267|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-31 21:21:32.2512|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/victorpascale/Projects/4semester/vare-service/vareAPI/ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-31 21:21:40.5270|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController |url: https://localhost/api/vare|action: Post|vareAPI.Controllers.vareController..ctor
+2022-10-31 21:21:55.8134|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController |url: https://localhost/api/vare|action: Post|vareAPI.Controllers.vareController..ctor
+2022-10-31 21:23:15.5735|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController |url: https://localhost/api/vare|action: Post|vareAPI.Controllers.vareController..ctor
+2022-10-31 21:23:16.1161|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController |url: https://localhost/api/vare|action: Post|vareAPI.Controllers.vareController..ctor
+2022-10-31 21:23:17.8873|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController |url: https://localhost/api/vare|action: Post|vareAPI.Controllers.vareController..ctor
+2022-10-31 21:23:23.3770|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+2022-10-31 21:23:28.0907|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-10-31 21:23:28.4525|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7069 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-31 21:23:28.4639|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5131 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-10-31 21:23:28.4639|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-31 21:23:28.4649|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-31 21:23:28.4649|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/victorpascale/Projects/4semester/vare-service/vareAPI/ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-10-31 21:23:31.4236|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController |url: https://localhost/api/vare|action: Post|vareAPI.Controllers.vareController..ctor
+2022-10-31 21:29:10.9770|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping

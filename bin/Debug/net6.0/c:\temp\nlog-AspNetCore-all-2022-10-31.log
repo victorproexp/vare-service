@@ -1,0 +1,517 @@
+2022-10-31 21:17:52.3075|0|DEBUG|Program|init main 
+2022-10-31 21:17:52.6370|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-10-31 21:17:52.7023|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-10-31 21:17:52.9716|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 9EB214C1A02EC9E73CC1B741F008CEBD142ECB88) 
+2022-10-31 21:17:53.0273|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7069 
+2022-10-31 21:17:53.0430|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5131 
+2022-10-31 21:17:53.0463|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly vareAPI 
+2022-10-31 21:17:53.0575|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-10-31 21:17:53.0594|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-10-31 21:17:53.0610|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/victorpascale/Projects/4semester/vare-service/vareAPI/ 
+2022-10-31 21:17:53.0610|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-10-31 21:19:05.2047|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLRFKK8RU67" received FIN. 
+2022-10-31 21:19:05.2141|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFKK8RU67" accepted. 
+2022-10-31 21:19:05.2155|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFKK8RU67" started. 
+2022-10-31 21:19:05.2161|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFKK8RU68" accepted. 
+2022-10-31 21:19:05.2161|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFKK8RU68" started. 
+2022-10-31 21:19:05.2340|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-10-31 21:19:05.2508|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFKK8RU67" stopped. 
+2022-10-31 21:19:05.2569|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLRFKK8RU67" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-10-31 21:19:05.2679|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMLRFKK8RU68 established using the following protocol: Tls12 
+2022-10-31 21:19:05.3244|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 
+2022-10-31 21:19:05.3255|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-10-31 21:19:05.3257|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-31 21:19:05.3655|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/vare' 
+2022-10-31 21:19:05.3680|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' with route pattern 'api/vare' is valid for the request path '/api/vare' 
+2022-10-31 21:19:05.3680|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:19:05.3890|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2022-10-31 21:19:05.3929|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:19:05.4424|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "vare"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(vareAPI.Models.Vare) on controller vareAPI.Controllers.vareController (vareAPI). 
+2022-10-31 21:19:05.4508|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-31 21:19:05.4678|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-10-31 21:19:05.4703|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-10-31 21:19:05.4878|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-31 21:19:05.4895|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-10-31 21:19:05.4937|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:19:05.8874|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController 
+2022-10-31 21:19:05.8984|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:19:05.9095|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:19:05.9118|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' using the name '' in request data ... 
+2022-10-31 21:19:05.9135|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2022-10-31 21:19:05.9397|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFKK8RU68", Request id "0HMLRFKK8RU68:00000002": started reading request body. 
+2022-10-31 21:19:05.9397|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFKK8RU68", Request id "0HMLRFKK8RU68:00000002": done reading request body. 
+2022-10-31 21:19:05.9470|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'vareAPI.Models.Vare' 
+2022-10-31 21:19:05.9476|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:19:05.9476|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:19:05.9476|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:19:05.9659|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:19:05.9681|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:19:05.9681|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:19:05.9681|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:19:05.9681|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. 
+2022-10-31 21:19:05.9733|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:19:05.9747|3|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2022-10-31 21:19:05.9747|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:19:05.9747|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:19:05.9756|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:19:05.9756|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:19:05.9756|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2022-10-31 21:19:05.9782|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-10-31 21:19:05.9801|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-10-31 21:19:05.9809|9|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2022-10-31 21:19:05.9816|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2022-10-31 21:19:05.9816|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2022-10-31 21:19:05.9907|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2022-10-31 21:19:05.9907|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:19:05.9907|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:19:05.9947|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action vareAPI.Controllers.vareController.Post (vareAPI) in 501.2176ms 
+2022-10-31 21:19:05.9947|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:19:05.9971|9|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFKK8RU68" completed keep alive response. 
+2022-10-31 21:19:05.9998|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 - 400 - application/problem+json;+charset=utf-8 679.9942ms 
+2022-10-31 21:20:11.2486|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7069/api/vare application/json 76 
+2022-10-31 21:20:11.2486|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-31 21:20:11.2486|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/vare' 
+2022-10-31 21:20:11.2486|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' with route pattern 'api/vare' is valid for the request path '/api/vare' 
+2022-10-31 21:20:11.2486|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:20:11.2486|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2022-10-31 21:20:11.2486|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:20:11.2486|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "vare"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(vareAPI.Models.Vare) on controller vareAPI.Controllers.vareController (vareAPI). 
+2022-10-31 21:20:11.2486|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-31 21:20:11.2486|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-10-31 21:20:11.2486|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-10-31 21:20:11.2486|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-31 21:20:11.2486|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-10-31 21:20:11.2486|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:20:11.2486|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController 
+2022-10-31 21:20:11.2508|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:20:11.2508|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:20:11.2508|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' using the name '' in request data ... 
+2022-10-31 21:20:11.2508|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2022-10-31 21:20:11.2508|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFKK8RU68", Request id "0HMLRFKK8RU68:00000003": started reading request body. 
+2022-10-31 21:20:11.2508|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFKK8RU68", Request id "0HMLRFKK8RU68:00000003": done reading request body. 
+2022-10-31 21:20:11.2544|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'vareAPI.Models.Vare' 
+2022-10-31 21:20:11.2544|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:20:11.2544|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:20:11.2544|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:20:11.2547|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:20:11.2547|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:20:11.2547|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:20:11.2547|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:20:11.2547|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:20:11.2577|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) - Validation state: Valid 
+2022-10-31 21:20:11.2577|1|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) with arguments (vareAPI.Models.Vare) 
+2022-10-31 21:20:11.4714|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method vareAPI.Controllers.vareController.Post (vareAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 210.7796ms. 
+2022-10-31 21:20:11.4719|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:20:11.4719|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:20:11.4719|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:20:11.4719|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:20:11.4726|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:20:11.4726|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:20:11.4726|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:20:11.4726|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-10-31 21:20:11.4726|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-10-31 21:20:11.4726|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-10-31 21:20:11.4726|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-10-31 21:20:11.4726|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-10-31 21:20:11.4726|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:20:11.4974|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-31 21:20:11.5045|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template api/vare/{id:length(24)} for vareAPI.Controllers.vareController.Get (vareAPI) resulting in /api/vare/63602dfbac436e2d2bbe540a and  
+2022-10-31 21:20:11.5061|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) with result /api/vare/63602dfbac436e2d2bbe540a 
+2022-10-31 21:20:11.5109|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:20:11.5109|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:20:11.5109|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:20:11.5116|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action vareAPI.Controllers.vareController.Post (vareAPI) in 262.0969ms 
+2022-10-31 21:20:11.5116|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:20:11.5130|9|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFKK8RU68" completed keep alive response. 
+2022-10-31 21:20:11.5130|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7069/api/vare application/json 76 - 201 - application/json;+charset=utf-8 264.5588ms 
+2022-10-31 21:21:19.9081|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-10-31 21:21:19.9102|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-10-31 21:21:19.9616|10|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFKK8RU68" disconnecting. 
+2022-10-31 21:21:19.9660|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFKK8RU68" stopped. 
+2022-10-31 21:21:19.9669|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLRFKK8RU68" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-10-31 21:21:19.9726|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-10-31 21:21:31.5602|0|DEBUG|Program|init main 
+2022-10-31 21:21:31.8779|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-10-31 21:21:31.9283|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-10-31 21:21:32.1813|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 9EB214C1A02EC9E73CC1B741F008CEBD142ECB88) 
+2022-10-31 21:21:32.2100|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7069 
+2022-10-31 21:21:32.2239|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5131 
+2022-10-31 21:21:32.2251|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly vareAPI 
+2022-10-31 21:21:32.2251|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-10-31 21:21:32.2267|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-10-31 21:21:32.2512|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/victorpascale/Projects/4semester/vare-service/vareAPI/ 
+2022-10-31 21:21:32.2523|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-10-31 21:21:40.1272|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLRFM2EAI1N" received FIN. 
+2022-10-31 21:21:40.1343|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1N" accepted. 
+2022-10-31 21:21:40.1354|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1N" started. 
+2022-10-31 21:21:40.1367|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1O" accepted. 
+2022-10-31 21:21:40.1369|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1O" started. 
+2022-10-31 21:21:40.1455|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-10-31 21:21:40.1593|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1N" stopped. 
+2022-10-31 21:21:40.1613|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLRFM2EAI1N" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-10-31 21:21:40.1848|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMLRFM2EAI1O established using the following protocol: Tls12 
+2022-10-31 21:21:40.2154|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7069/api/vare application/json 44 
+2022-10-31 21:21:40.2162|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-10-31 21:21:40.2162|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-31 21:21:40.2439|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/vare' 
+2022-10-31 21:21:40.2466|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' with route pattern 'api/vare' is valid for the request path '/api/vare' 
+2022-10-31 21:21:40.2470|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:21:40.2623|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2022-10-31 21:21:40.2641|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:21:40.2911|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "vare"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(vareAPI.Models.Vare) on controller vareAPI.Controllers.vareController (vareAPI). 
+2022-10-31 21:21:40.2911|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-31 21:21:40.2919|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-10-31 21:21:40.2919|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-10-31 21:21:40.2919|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-31 21:21:40.2919|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-10-31 21:21:40.2919|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:21:40.5270|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController 
+2022-10-31 21:21:40.5293|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:21:40.5333|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:21:40.5385|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' using the name '' in request data ... 
+2022-10-31 21:21:40.5395|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2022-10-31 21:21:40.5620|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000002": started reading request body. 
+2022-10-31 21:21:40.5620|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000002": done reading request body. 
+2022-10-31 21:21:40.5719|1|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter threw an exception: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 3 | BytePositionInLine: 0. 
+2022-10-31 21:21:40.5719|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:21:40.5719|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:21:40.5719|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:21:40.5784|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:21:40.5800|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:21:40.5800|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:21:40.5800|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:21:40.5800|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. 
+2022-10-31 21:21:40.5808|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:21:40.5808|3|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2022-10-31 21:21:40.5808|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:21:40.5808|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:21:40.5808|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:21:40.5808|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:21:40.5822|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2022-10-31 21:21:40.5839|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-10-31 21:21:40.5860|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-10-31 21:21:40.5860|9|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2022-10-31 21:21:40.5878|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2022-10-31 21:21:40.5880|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2022-10-31 21:21:40.5928|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2022-10-31 21:21:40.5928|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:21:40.5928|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:21:40.5964|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action vareAPI.Controllers.vareController.Post (vareAPI) in 300.9046ms 
+2022-10-31 21:21:40.5964|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:21:40.5964|9|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1O" completed keep alive response. 
+2022-10-31 21:21:40.5980|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7069/api/vare application/json 44 - 400 - application/problem+json;+charset=utf-8 383.8516ms 
+2022-10-31 21:21:55.8131|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7069/api/vare application/json 43 
+2022-10-31 21:21:55.8131|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-31 21:21:55.8131|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/vare' 
+2022-10-31 21:21:55.8131|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' with route pattern 'api/vare' is valid for the request path '/api/vare' 
+2022-10-31 21:21:55.8134|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:21:55.8134|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2022-10-31 21:21:55.8134|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:21:55.8134|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "vare"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(vareAPI.Models.Vare) on controller vareAPI.Controllers.vareController (vareAPI). 
+2022-10-31 21:21:55.8134|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-31 21:21:55.8134|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-10-31 21:21:55.8134|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-10-31 21:21:55.8134|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-31 21:21:55.8134|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-10-31 21:21:55.8134|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:21:55.8134|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController 
+2022-10-31 21:21:55.8134|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:21:55.8145|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:21:55.8145|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' using the name '' in request data ... 
+2022-10-31 21:21:55.8145|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2022-10-31 21:21:55.8145|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000003": started reading request body. 
+2022-10-31 21:21:55.8145|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000003": done reading request body. 
+2022-10-31 21:21:55.8145|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'vareAPI.Models.Vare' 
+2022-10-31 21:21:55.8145|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:21:55.8145|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:21:55.8145|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:21:55.8295|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:21:55.8295|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:21:55.8295|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:21:55.8295|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:21:55.8295|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:21:55.8391|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) - Validation state: Valid 
+2022-10-31 21:21:55.8391|1|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) with arguments (vareAPI.Models.Vare) 
+2022-10-31 21:21:56.0176|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method vareAPI.Controllers.vareController.Post (vareAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 175.4513ms. 
+2022-10-31 21:21:56.0205|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:21:56.0205|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:21:56.0205|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:21:56.0205|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:21:56.0205|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:21:56.0205|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:21:56.0213|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:21:56.0213|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-10-31 21:21:56.0213|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-10-31 21:21:56.0213|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-10-31 21:21:56.0213|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-10-31 21:21:56.0213|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-10-31 21:21:56.0213|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:21:56.0445|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-31 21:21:56.0500|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template api/vare/{id:length(24)} for vareAPI.Controllers.vareController.Get (vareAPI) resulting in /api/vare/63602e636f7300537ee4fe1f and  
+2022-10-31 21:21:56.0509|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) with result /api/vare/63602e636f7300537ee4fe1f 
+2022-10-31 21:21:56.0548|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:21:56.0548|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:21:56.0548|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:21:56.0559|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action vareAPI.Controllers.vareController.Post (vareAPI) in 242.0856ms 
+2022-10-31 21:21:56.0559|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:21:56.0575|9|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1O" completed keep alive response. 
+2022-10-31 21:21:56.0575|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7069/api/vare application/json 43 - 201 - application/json;+charset=utf-8 244.5707ms 
+2022-10-31 21:23:15.5708|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 
+2022-10-31 21:23:15.5719|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-31 21:23:15.5719|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/vare' 
+2022-10-31 21:23:15.5719|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' with route pattern 'api/vare' is valid for the request path '/api/vare' 
+2022-10-31 21:23:15.5719|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:15.5735|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2022-10-31 21:23:15.5735|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:15.5735|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "vare"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(vareAPI.Models.Vare) on controller vareAPI.Controllers.vareController (vareAPI). 
+2022-10-31 21:23:15.5735|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-31 21:23:15.5735|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-10-31 21:23:15.5735|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-10-31 21:23:15.5735|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-31 21:23:15.5735|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-10-31 21:23:15.5735|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:23:15.5735|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController 
+2022-10-31 21:23:15.5747|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:23:15.5747|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:23:15.5747|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' using the name '' in request data ... 
+2022-10-31 21:23:15.5747|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2022-10-31 21:23:15.5749|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000004": started reading request body. 
+2022-10-31 21:23:15.5749|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000004": done reading request body. 
+2022-10-31 21:23:15.5749|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'vareAPI.Models.Vare' 
+2022-10-31 21:23:15.5749|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:15.5749|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:15.5749|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:23:15.5749|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:15.5749|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:15.5749|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:15.5749|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:15.5749|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:15.5749|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) - Validation state: Valid 
+2022-10-31 21:23:15.5749|1|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) with arguments (vareAPI.Models.Vare) 
+2022-10-31 21:23:15.5849|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method vareAPI.Controllers.vareController.Post (vareAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 9.5307ms. 
+2022-10-31 21:23:15.5849|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:15.5849|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:15.5849|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:15.5849|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:15.5849|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:15.5849|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:15.5849|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:23:15.5849|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-10-31 21:23:15.5849|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-10-31 21:23:15.5849|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-10-31 21:23:15.5849|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-10-31 21:23:15.5849|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-10-31 21:23:15.5849|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:15.5849|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-31 21:23:15.5849|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template api/vare/{id:length(24)} for vareAPI.Controllers.vareController.Get (vareAPI) resulting in /api/vare/63602eb36f7300537ee4fe20 and  
+2022-10-31 21:23:15.5849|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) with result /api/vare/63602eb36f7300537ee4fe20 
+2022-10-31 21:23:15.5849|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:23:15.5849|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:15.5849|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:15.5849|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action vareAPI.Controllers.vareController.Post (vareAPI) in 11.9824ms 
+2022-10-31 21:23:15.5859|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:15.5859|9|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1O" completed keep alive response. 
+2022-10-31 21:23:15.5859|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 - 201 - application/json;+charset=utf-8 15.2279ms 
+2022-10-31 21:23:16.1161|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 
+2022-10-31 21:23:16.1161|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-31 21:23:16.1161|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/vare' 
+2022-10-31 21:23:16.1161|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' with route pattern 'api/vare' is valid for the request path '/api/vare' 
+2022-10-31 21:23:16.1161|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:16.1161|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2022-10-31 21:23:16.1161|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:16.1161|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "vare"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(vareAPI.Models.Vare) on controller vareAPI.Controllers.vareController (vareAPI). 
+2022-10-31 21:23:16.1161|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-31 21:23:16.1161|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-10-31 21:23:16.1161|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-10-31 21:23:16.1161|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-31 21:23:16.1161|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-10-31 21:23:16.1161|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:23:16.1161|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController 
+2022-10-31 21:23:16.1169|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:23:16.1169|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:23:16.1169|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' using the name '' in request data ... 
+2022-10-31 21:23:16.1169|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2022-10-31 21:23:16.1169|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000005": started reading request body. 
+2022-10-31 21:23:16.1169|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000005": done reading request body. 
+2022-10-31 21:23:16.1169|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'vareAPI.Models.Vare' 
+2022-10-31 21:23:16.1169|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:16.1169|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:16.1169|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:23:16.1169|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:16.1169|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:16.1169|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:16.1169|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:16.1169|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:16.1169|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) - Validation state: Valid 
+2022-10-31 21:23:16.1169|1|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) with arguments (vareAPI.Models.Vare) 
+2022-10-31 21:23:16.1185|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method vareAPI.Controllers.vareController.Post (vareAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 1.2278ms. 
+2022-10-31 21:23:16.1185|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:16.1185|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:16.1185|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:16.1185|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:16.1185|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:16.1185|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:16.1185|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:23:16.1185|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-10-31 21:23:16.1185|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-10-31 21:23:16.1185|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-10-31 21:23:16.1185|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-10-31 21:23:16.1185|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-10-31 21:23:16.1185|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:16.1185|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-31 21:23:16.1189|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template api/vare/{id:length(24)} for vareAPI.Controllers.vareController.Get (vareAPI) resulting in /api/vare/63602eb46f7300537ee4fe21 and  
+2022-10-31 21:23:16.1189|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) with result /api/vare/63602eb46f7300537ee4fe21 
+2022-10-31 21:23:16.1189|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:23:16.1189|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:16.1189|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:16.1189|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action vareAPI.Controllers.vareController.Post (vareAPI) in 2.67ms 
+2022-10-31 21:23:16.1189|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:16.1189|9|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1O" completed keep alive response. 
+2022-10-31 21:23:16.1189|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 - 201 - application/json;+charset=utf-8 3.3374ms 
+2022-10-31 21:23:17.8873|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 
+2022-10-31 21:23:17.8873|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-31 21:23:17.8873|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/vare' 
+2022-10-31 21:23:17.8873|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' with route pattern 'api/vare' is valid for the request path '/api/vare' 
+2022-10-31 21:23:17.8873|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:17.8873|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2022-10-31 21:23:17.8873|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:17.8873|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "vare"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(vareAPI.Models.Vare) on controller vareAPI.Controllers.vareController (vareAPI). 
+2022-10-31 21:23:17.8873|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-31 21:23:17.8873|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-10-31 21:23:17.8873|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-10-31 21:23:17.8873|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-31 21:23:17.8873|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-10-31 21:23:17.8873|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:23:17.8873|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController 
+2022-10-31 21:23:17.8882|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:23:17.8882|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:23:17.8882|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' using the name '' in request data ... 
+2022-10-31 21:23:17.8882|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2022-10-31 21:23:17.8882|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000006": started reading request body. 
+2022-10-31 21:23:17.8882|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFM2EAI1O", Request id "0HMLRFM2EAI1O:00000006": done reading request body. 
+2022-10-31 21:23:17.8882|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'vareAPI.Models.Vare' 
+2022-10-31 21:23:17.8882|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:17.8882|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:17.8882|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:23:17.8882|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:17.8882|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:17.8882|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:17.8882|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:17.8882|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:17.8882|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) - Validation state: Valid 
+2022-10-31 21:23:17.8882|1|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method vareAPI.Controllers.vareController.Post (vareAPI) with arguments (vareAPI.Models.Vare) 
+2022-10-31 21:23:17.9004|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method vareAPI.Controllers.vareController.Post (vareAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 11.7149ms. 
+2022-10-31 21:23:17.9004|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:17.9004|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:17.9004|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:17.9004|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:17.9004|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:17.9004|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:17.9004|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:23:17.9004|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-10-31 21:23:17.9004|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-10-31 21:23:17.9004|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-10-31 21:23:17.9004|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-10-31 21:23:17.9004|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-10-31 21:23:17.9004|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:17.9004|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-10-31 21:23:17.9004|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template api/vare/{id:length(24)} for vareAPI.Controllers.vareController.Get (vareAPI) resulting in /api/vare/63602eb56f7300537ee4fe22 and  
+2022-10-31 21:23:17.9004|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints vareAPI.Controllers.vareController.Get (vareAPI), vareAPI.Controllers.vareController.Get (vareAPI) with result /api/vare/63602eb56f7300537ee4fe22 
+2022-10-31 21:23:17.9011|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.CreatedAtActionResult. 
+2022-10-31 21:23:17.9011|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:17.9011|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:17.9011|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action vareAPI.Controllers.vareController.Post (vareAPI) in 13.4628ms 
+2022-10-31 21:23:17.9011|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:17.9011|9|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1O" completed keep alive response. 
+2022-10-31 21:23:17.9011|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 - 201 - application/json;+charset=utf-8 14.1417ms 
+2022-10-31 21:23:23.3770|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-10-31 21:23:23.3795|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-10-31 21:23:23.4098|10|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1O" disconnecting. 
+2022-10-31 21:23:23.4111|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFM2EAI1O" stopped. 
+2022-10-31 21:23:23.4119|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLRFM2EAI1O" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-10-31 21:23:23.4166|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-10-31 21:23:28.0907|0|DEBUG|Program|init main 
+2022-10-31 21:23:28.2937|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-10-31 21:23:28.3376|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-10-31 21:23:28.4290|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 9EB214C1A02EC9E73CC1B741F008CEBD142ECB88) 
+2022-10-31 21:23:28.4525|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7069 
+2022-10-31 21:23:28.4639|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5131 
+2022-10-31 21:23:28.4639|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly vareAPI 
+2022-10-31 21:23:28.4639|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-10-31 21:23:28.4649|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-10-31 21:23:28.4649|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/victorpascale/Projects/4semester/vare-service/vareAPI/ 
+2022-10-31 21:23:28.4649|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-10-31 21:23:31.0244|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLRFN3FTLQ7" received FIN. 
+2022-10-31 21:23:31.0320|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFN3FTLQ7" accepted. 
+2022-10-31 21:23:31.0352|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFN3FTLQ8" accepted. 
+2022-10-31 21:23:31.0365|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFN3FTLQ7" started. 
+2022-10-31 21:23:31.0424|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFN3FTLQ8" started. 
+2022-10-31 21:23:31.0530|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-10-31 21:23:31.0672|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFN3FTLQ7" stopped. 
+2022-10-31 21:23:31.0692|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLRFN3FTLQ7" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-10-31 21:23:31.0942|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMLRFN3FTLQ8 established using the following protocol: Tls12 
+2022-10-31 21:23:31.1280|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 
+2022-10-31 21:23:31.1289|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-10-31 21:23:31.1289|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-10-31 21:23:31.1538|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/vare' 
+2022-10-31 21:23:31.1557|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' with route pattern 'api/vare' is valid for the request path '/api/vare' 
+2022-10-31 21:23:31.1557|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:31.1718|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2022-10-31 21:23:31.1747|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:31.2010|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "vare"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(vareAPI.Models.Vare) on controller vareAPI.Controllers.vareController (vareAPI). 
+2022-10-31 21:23:31.2016|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-10-31 21:23:31.2016|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-10-31 21:23:31.2016|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-10-31 21:23:31.2016|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-10-31 21:23:31.2016|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-10-31 21:23:31.2025|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:23:31.4236|1|DEBUG|vareAPI.Controllers.vareController|NLog injected into VareController 
+2022-10-31 21:23:31.4269|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller vareAPI.Controllers.vareController (vareAPI) 
+2022-10-31 21:23:31.4328|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:23:31.4346|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare' using the name '' in request data ... 
+2022-10-31 21:23:31.4359|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2022-10-31 21:23:31.4659|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFN3FTLQ8", Request id "0HMLRFN3FTLQ8:00000002": started reading request body. 
+2022-10-31 21:23:31.4659|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMLRFN3FTLQ8", Request id "0HMLRFN3FTLQ8:00000002": done reading request body. 
+2022-10-31 21:23:31.4713|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'vareAPI.Models.Vare' 
+2022-10-31 21:23:31.4716|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:31.4716|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:31.4716|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare' ... 
+2022-10-31 21:23:31.4927|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'newVare' of type 'vareAPI.Models.Vare'. 
+2022-10-31 21:23:31.4949|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:31.4949|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:31.4954|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:31.4954|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. 
+2022-10-31 21:23:31.4954|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-10-31 21:23:31.4967|3|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2022-10-31 21:23:31.4967|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:31.4967|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-10-31 21:23:31.4967|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:31.4967|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:31.4981|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2022-10-31 21:23:31.4992|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-10-31 21:23:31.5007|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-10-31 21:23:31.5007|9|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2022-10-31 21:23:31.5019|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2022-10-31 21:23:31.5019|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2022-10-31 21:23:31.5086|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2022-10-31 21:23:31.5086|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:31.5086|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-10-31 21:23:31.5156|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action vareAPI.Controllers.vareController.Post (vareAPI) in 306.9878ms 
+2022-10-31 21:23:31.5156|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'vareAPI.Controllers.vareController.Post (vareAPI)' 
+2022-10-31 21:23:31.5156|9|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFN3FTLQ8" completed keep alive response. 
+2022-10-31 21:23:31.5173|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7069/api/vare application/json 42 - 400 - application/problem+json;+charset=utf-8 391.3689ms 
+2022-10-31 21:25:42.4933|10|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFN3FTLQ8" disconnecting. 
+2022-10-31 21:25:42.4963|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMLRFN3FTLQ8" stopped. 
+2022-10-31 21:25:42.4969|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMLRFN3FTLQ8" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-10-31 21:29:10.9770|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-10-31 21:29:10.9794|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-10-31 21:29:10.9962|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
